@@ -1,0 +1,30 @@
+{
+  "name": "cheetcode-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "start:prod": "node dist/main.js",
+    "start:dev": "nest start --watch"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/platform-express": "^10.4.20",
+    "@prisma/client": "^5.22.0",
+    "axios": "^1.13.2",
+    "groq-sdk": "^0.37.0",
+    "openai": "^4.0.0",
+    "prisma": "^5.22.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.14",
+    "@types/node": "^25.0.3"
+  }
+}

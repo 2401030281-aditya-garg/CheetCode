@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* 🔥 Landing Background */
+.landing-bg {
+  background: radial-gradient(
+      circle at top left,
+      rgba(56, 189, 248, 0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(16, 185, 129, 0.18),
+      transparent 45%
+    ),
+    linear-gradient(180deg, #09090b, #020617);
+}
+
+/* subtle animation */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+
+body {
+  background:
+    radial-gradient(
+      1200px circle at 10% -10%,
+      rgba(59, 130, 246, 0.12),
+      transparent 40%
+    ),
+    radial-gradient(
+      1200px circle at 90% 10%,
+      rgba(16, 185, 129, 0.10),
+      transparent 40%
+    ),
+    linear-gradient(180deg, #020617, #020617);
+  background-attachment: fixed;
+}
