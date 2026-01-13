@@ -76,9 +76,9 @@ public:
   }, [session]);
 
   /* ---------------- FETCH LEETCODE ---------------- */
-  async function fetchFromLeetCode() {
+  async function fetchProblemFromURL() {
     if (!problem.startsWith('http')) {
-      setLeetcodeError('Paste a valid LeetCode problem URL');
+      setLeetcodeError('Paste a valid problem URL');
       return;
     }
 
@@ -89,15 +89,15 @@ public:
       setLevel(null);
 
       const res = await axios.get(
-        `${BACKEND_URL}/leetcode/fetch`,
-        { params: { input: problem } }
+        `${BACKEND_URL}/problem/fetch`,
+        { params: { url: problem } }
       );
 
       setProblem(`Title: ${res.data.title}\n\n${res.data.description}`);
       setLevel(res.data.difficulty.toLowerCase());
       setLeetcodeFetched(true);
     } catch {
-      setLeetcodeError('Failed to fetch from LeetCode');
+      setLeetcodeError('Failed to fetch');
     } finally {
       setLeetcodeLoading(false);
     }
@@ -153,7 +153,7 @@ public:
             <h1 className="text-4xl font-semibold text-white">CheetCode</h1>
           </div>
           <p className="text-zinc-500 text-lg">
-            AI-powered LeetCode problem analysis
+            AI-powered Coding problem analysis
           </p>
         </div>
 
@@ -180,13 +180,13 @@ public:
             disabled={leetcodeFetched}
             className="w-full bg-zinc-900 border border-zinc-700 p-3 rounded text-white"
             rows={4}
-            placeholder="Paste LeetCode problem URL"
+            placeholder="Paste problem URL"
             value={problem}
             onChange={(e) => setProblem(e.target.value)}
           />
 
           <button
-            onClick={fetchFromLeetCode}
+            onClick={fetchProblemFromURL}
             disabled={leetcodeLoading}
             className="w-full bg-blue-600 hover:bg-blue-700 transition p-2 rounded font-semibold"
           >

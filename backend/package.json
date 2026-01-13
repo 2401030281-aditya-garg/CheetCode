@@ -17,6 +17,7 @@
     "@nestjs/platform-express": "^10.4.20",
     "@prisma/client": "^5.22.0",
     "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
     "groq-sdk": "^0.37.0",
     "openai": "^4.0.0",
     "prisma": "^5.22.0",
