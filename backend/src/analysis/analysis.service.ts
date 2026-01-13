@@ -97,7 +97,7 @@ SECTION RULES:
 - explanation → explain WHAT THE CODE CURRENTLY DOES (even if useless)
 - timeComplexity → based ONLY on visible operations
 - spaceComplexity → based ONLY on visible variables
-- betterApproaches → optional
+- betterApproaches → best solution with least timeComplexity
 - nextSteps → advice
 
 JSON FORMAT (EXACT):

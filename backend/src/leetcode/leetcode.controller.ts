@@ -1,12 +1,12 @@
-import { Controller, Get, Query } from '@nestjs/common';
-import { LeetCodeService } from './leetcode.service';
+import { Controller, Get, Query } from "@nestjs/common";
+import { LeetCodeService } from "./leetcode.service";
 
-@Controller('leetcode')
+@Controller("leetcode")
 export class LeetCodeController {
-  constructor(private readonly leetcode: LeetCodeService) {}
+  constructor(private readonly leetcodeService: LeetCodeService) {}
 
-  @Get('fetch')
-  async fetch(@Query('input') input: string) {
-    return this.leetcode.fetchProblem(input);
+  @Get("fetch")
+  fetch(@Query("input") input: string) {
+    return this.leetcodeService.fetchProblem(input);
   }
 }
