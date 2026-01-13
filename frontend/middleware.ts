@@ -1,14 +1,6 @@
-import { withAuth } from "next-auth/middleware";
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-export default withAuth({
-  pages: {
-    signIn: "/",
-  },
-});
-
-export const config = {
-  matcher: [
-    "/dashboard/:path*",
-    "/my-submissions/:path*",
-  ],
-};
+export function middleware(request: NextRequest) {
+  return NextResponse.next();
+}
