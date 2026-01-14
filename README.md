@@ -1,6 +1,6 @@
-# 🐆 CheetCode v1.0
+# 🐆 CheetCode
 
-CheetCode is an AI-powered LeetCode companion that analyzes your submitted solutions, tracks your progress, and provides personalized improvement recommendations — all inside a clean, modern developer-focused interface.
+CheetCode is an AI-powered companion that analyzes your submitted solutions, tracks your progress, and provides personalized improvement recommendations — all inside a clean, modern developer-focused interface.
 
 Built to help you understand **what your code actually does**, not just whether it passes.
 
@@ -36,7 +36,7 @@ Built to help you understand **what your code actually does**, not just whether 
 - User-specific submission tracking
 
 ### 🎨 UI & UX
-- Dark, LeetCode-inspired theme
+- Dark theme
 - Fully responsive layout
 - Clean typography and smooth interactions
 
@@ -63,31 +63,6 @@ Built to help you understand **what your code actually does**, not just whether 
 
 ---
 
-## 🔑 Environment Variables
-
-### 🌐 Frontend (Vercel)
-```env
-NEXT_PUBLIC_BACKEND_URL=
-NEXTAUTH_URL=
-NEXTAUTH_SECRET=
-GITHUB_CLIENT_ID=
-GITHUB_CLIENT_SECRET=
-
-```
-### 🎯 Backend (Railway / Server)
-```env
-
-DATABASE_URL=
-GROQ_API_KEY=
-```
-Notes-
-
-NEXT_PUBLIC_BACKEND_URL must be enabled for production
-
-GROQ_API_KEY is required for AI analysis & recommendations
-
----
-
 ## 🚀 Local Setup
 
 
@@ -106,7 +81,7 @@ Ensure PostgreSQL is running and environment variables are configured.
 ---
 
 ## 📌 Current Version
-### 🐆 CheetCode v1.0
+### 🐆 CheetCode
 
 -Stable AI analysis flow
 
@@ -129,8 +104,6 @@ Ensure PostgreSQL is running and environment variables are configured.
 
 ## 👤 Author
 Made by Aditya Garg
-
-GitHub- https://github.com/AdiiGarg
 
 LinkedIn- https://linkedin.com/in/aditya-garg-043637343
 
