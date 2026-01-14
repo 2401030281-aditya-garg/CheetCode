@@ -26,7 +26,7 @@ export default function LandingHero() {
         </h1>
 
         <p className="text-zinc-400 text-lg mb-8">
-          AI-powered LeetCode problem analysis.  
+          AI-powered Coding problems analysis.  
           Understand patterns. Improve faster.
         </p>
 

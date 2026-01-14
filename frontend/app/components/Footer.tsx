@@ -12,15 +12,15 @@ export default function Footer() {
           text-zinc-500
         "
       >
-        {/* Left text */}
+        {/* Left text
         <span>
           Made by <span className="text-zinc-400">Aditya Garg</span>
-        </span>
+        </span> */}
 
         {/* Icons */}
         <div className="flex items-center gap-3">
           <a
-            href="https://github.com/AdiiGarg"
+            href="https://github.com/2401030281-aditya-garg"
             target="_blank"
             className="hover:text-zinc-200 transition"
           >
