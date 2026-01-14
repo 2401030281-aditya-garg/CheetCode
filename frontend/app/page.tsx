@@ -177,7 +177,7 @@ public:
           </select>
 
           <textarea
-            disabled={leetcodeFetched}
+            //disabled={leetcodeFetched}
             className="w-full bg-zinc-900 border border-zinc-700 p-3 rounded text-white"
             rows={4}
             placeholder="Paste problem URL"
